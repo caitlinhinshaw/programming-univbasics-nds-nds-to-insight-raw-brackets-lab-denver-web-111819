@@ -21,7 +21,8 @@ def directors_totals(nds)
     director_index += 1
   end
 
-  puts result
+puts result
+puts nds[0][:movies][0][:worldwide_gross]
   result
 
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
