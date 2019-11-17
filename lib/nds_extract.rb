@@ -17,7 +17,7 @@ def directors_totals(nds)
     result[key] = sum
     director_index += 1
   end
-
+  result
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
