@@ -6,10 +6,10 @@ def directors_totals(nds)
   # that you know what you're starting with!
   result = {}
   director_index = 0
-  movie_index = 0
   while director_index < nds.length
-    key = nds[director_index][:name]
+    movie_index = 0
     sum = 0
+    key = nds[director_index][:name]
     while movie_index < nds[director_index][:movies].length
       sum += nds[director_index][:movies][movie_index][:worldwide_gross]
       movie_index += 1
