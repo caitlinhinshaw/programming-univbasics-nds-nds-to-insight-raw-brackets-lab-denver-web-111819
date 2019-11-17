@@ -7,20 +7,16 @@ def directors_totals(nds)
   result = {}
   director_index = 0
   movie_index = 0
-  sum = 0
   while director_index < nds.length
     key = nds[director_index][:name]
+    sum = 0
     while movie_index < nds[director_index][:movies].length
       sum += nds[director_index][:movies][movie_index][:worldwide_gross]
       movie_index += 1
     end
     result[key] = sum
-    sum = 0
     director_index += 1
   end
-
-
-puts nds[0][:movies][0][:worldwide_gross]
 
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   #
